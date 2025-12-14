@@ -25,6 +25,11 @@ function enviar() {
     let mensagemFormatada = `Olá, Bom dia! Eu gostaria de marcar um horário com você.
     Nome: ${nome}\nEmail: ${email}\nMensagem: ${mensagem}\nData: ${data}\nHora: ${hora}`;
     window.open(`https://wa.me/${whats}?text=${encodeURIComponent(mensagemFormatada)}`);
-    
-
 }
+
+const menuIcon = document.querySelector('.menu-icon');
+const nav = document.querySelector('nav ul');
+
+menuIcon.addEventListener('mousedown', () => {
+    nav.classList.toggle('active');
+});

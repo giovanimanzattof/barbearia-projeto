@@ -142,6 +142,13 @@ header nav ul a:hover {
     transform: translateY(4px);
 }
 
+header i {
+    font-size: 20px;
+    color: var(--button-color);
+    cursor: pointer;
+    display: none;
+}
+
 .sobre {
     padding: 40px 20px;
     background-color: var(--fundo-color);
@@ -193,6 +200,7 @@ header nav ul a:hover {
     border-radius: 10px;
     box-shadow: 20px 20px 10px var(--button-color);
 }
+
 .servicos {
     padding: 40px 20px;
     background-color: var(--fundo-color-secundario);
@@ -222,6 +230,7 @@ header nav ul a:hover {
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .conteudo-serv .card:hover {
     transform: translateY(-10px);
 }
@@ -238,7 +247,7 @@ header nav ul a:hover {
     line-height: 1.5;
     text-align: center;
     margin-top: 10px;
-   
+
 }
 
 .servicos-container button {
@@ -259,7 +268,7 @@ header nav ul a:hover {
     transform: translateY(-4px);
 }
 
-.galeria{
+.galeria {
     padding: 40px 20px;
     background-color: var(--fundo-color);
     color: var(--text-color);
@@ -287,11 +296,12 @@ header nav ul a:hover {
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .image img:hover {
     transform: translateY(-10px);
 }
 
-.depo{
+.depo {
     padding: 40px 20px;
     background-color: var(--fundo-color);
     color: var(--text-color);
@@ -320,6 +330,7 @@ header nav ul a:hover {
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .conteudo-depo .card:hover {
     transform: translateY(-10px);
 }
@@ -338,7 +349,7 @@ header nav ul a:hover {
     line-height: 1.5;
     text-align: center;
     margin-top: 10px;
-   
+
 }
 
 .conteudo-depo .card p {
@@ -346,10 +357,10 @@ header nav ul a:hover {
     line-height: 1.5;
     text-align: center;
     margin-top: 10px;
-   
+
 }
 
-.contato{
+.contato {
     padding: 40px 20px;
     background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.759)), url(../assets/images/maps.png);
     background-position: center;
@@ -361,7 +372,7 @@ header nav ul a:hover {
     color: whitesmoke;
 }
 
-.contato .container-cont{
+.contato .container-cont {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -371,22 +382,22 @@ header nav ul a:hover {
     max-width: 1200px;
 }
 
-.conteudo-cont .cards{
+.conteudo-cont .cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.contato .cards h3{
+.contato .cards h3 {
     color: #ffffff;
-} 
+}
 
 
 .contato .cards p {
     color: whitesmoke;
 }
 
-form{
+form {
     max-width: 500px;
     margin: 0 auto;
 }
@@ -396,14 +407,14 @@ form{
     gap: 30px;
 }
 
-.input-box{
+.input-box {
     width: 300px;
     height: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-input{
+input {
     width: 100%;
     height: 100%;
     border: none;
@@ -416,11 +427,11 @@ input{
     color: white;
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--text-color);
 }
 
-textarea{
+textarea {
     width: 100%;
     height: 100px;
     border: none;
@@ -433,7 +444,7 @@ textarea{
     color: white;
 }
 
-form button{
+form button {
     width: 100px;
     height: 40px;
     border-radius: 10px;
@@ -448,11 +459,11 @@ form button{
     display: block;
 }
 
-form button:hover{
+form button:hover {
     transform: translateY(-10px);
 }
 
-footer{
+footer {
     padding: 20px 20px;
     background-color: var(--fundo-color);
     color: var(--text-color);
@@ -460,7 +471,7 @@ footer{
     text-align: center;
 }
 
-select{
+select {
     width: 100%;
     height: 100%;
     border: none;
@@ -474,24 +485,47 @@ select{
 }
 
 @media screen and (max-width: 600px) {
-    nav{
-        display: none;
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
     }
-    
-    form{
+
+    nav ul {
+        flex-direction: column;
+        background-color: var(--fundo-color);
+        padding: 10px 20px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* classe ativa do menu */
+    nav ul.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+
+    .home {
+        padding: 0 20px;
+    }
+
+    form {
         max-width: 300px;
     }
-    .image img{
+
+    .image img {
         width: 100%;
     }
-    .image-sobre img{
+
+    .image-sobre img {
         width: 100%;
     }
-    
+
 }
-
-
-
-    
-
-
