@@ -238,7 +238,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="conversa.php" autocomplete="on" method="post">
+                <form autocomplete="on" method="post" target="_blank">
                     <div class="input-container">
                         <div class="input-box">
                             <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
@@ -248,9 +248,36 @@
                         </div>
                     </div>
                     <div class="input-text">
-                        <textarea name="mensagem" id="mensagem" placeholder="Digite uma Mensagem"></textarea>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite uma Mensagem" rows="6" cols="4"
+                            required></textarea>
                     </div>
-                    <button>Enviar</button>
+                    <div class="input-data">
+                        <input type="date" name="data" id="data" required>
+                        <select id="hora" name="hora" required>
+                            <option value="">Selecione um horário</option>
+                            <option>09:00</option>
+                            <option>09:30</option>
+                            <option>10:00</option>
+                            <option>10:30</option>
+                            <option>11:00</option>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>12:30</option>
+                            <option>13:00</option>
+                            <option>13:30</option>
+                            <option>14:00</option>
+                            <option>14:30</option>
+                            <option>15:00</option>
+                            <option>15:30</option>
+                            <option>16:00</option>
+                            <option>16:30</option>
+                            <option>17:00</option>
+                            <option>17:30</option>
+                            <option>18:00</option>
+                        </select>
+
+                    </div>
+                    <button onclick="enviar()">Enviar</button>
                 </form>
             </article>
         </div>
